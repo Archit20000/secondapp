@@ -1,4 +1,12 @@
-<h1>Login</h1>
+<body style="background-color: royalblue;">
+  <br>
+  <br>
+  <div>
+    <h1 style="text-align: center;">
+      <p style="font-size: xx-large;"><b>LOGIN</b></p>
+  <br>
+  <br>
+
 <input
 placeholder="Email"
 type="email"
@@ -7,7 +15,8 @@ name="email"
 class="form-control"
 [(ngModel)]="email"
 >
-<br/>
+
+  <br/>
 <input
 placeholder="Password"
 type="password"
@@ -16,30 +25,37 @@ name="password"
 class="form-control"
 [(ngModel)]="password"
 >
+  <br>
+  <button (click)="login()">Signin</button>
+  <br>
+  <br/>
+</h1>
+  </div>
 
-<button (click)="login()">Signin</button>
-<br/>
-
-
-
-
-<h1>Sign UP</h1>
-<input
-placeholder="Email"
-type="email"
-required
-name="email1"
-class="form-control"
-[(ngModel)]="email1"
->
-<br/>
-<input
-placeholder="Password"
-type="password"
-required
-name="password1"
-class="form-control"
-[(ngModel)]="password1"
->
-
-<button (click)="register()">SignUp</button>
+<div>
+  <h1 style="text-align: center;">
+    <p style="font-size: xx-large;"><b>SIGN UP</b></p>
+    <br>
+    <br>
+  <input
+  placeholder="Email"
+  type="email"
+  required
+  name="email1"
+  class="form-control"
+  [(ngModel)]="email1"
+  >
+    <br/>
+  <input
+  placeholder="Password"
+  type="password"
+  required
+  name="password1"
+  class="form-control"
+  [(ngModel)]="password1"
+  >
+    <br>
+    <button (click)="register()">SignUp</button>
+    </h1>
+</div>
+</body>
