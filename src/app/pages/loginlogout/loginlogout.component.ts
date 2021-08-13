@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {AuthService} from '../../services/auth.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-loginlogout',
@@ -10,13 +12,24 @@ export class LoginlogoutComponent implements OnInit {
   email="";
   password="";
 
-  constructor() { }
+  email1="";
+  password1="";
+
+  error="";
+
+  constructor(private authservice:AuthService,private router : Router) { }
 
   ngOnInit(): void {
   }
 
   login(){
-    alert("hyy "+this.email);
+
+    this.authservice.signinwithemail(this.email,this.password);
+  }
+
+  register(){
+    this.authservice.registerwithemail(this.email1,this.password1);
+
   }
 
     
