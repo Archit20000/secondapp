@@ -4,11 +4,12 @@
     <mat-tab-group mat-stretch-tabs class="example-stretched-tabs">
       <mat-tab label="Sign In">
           <mat-card-content>
-            <form action="">
+            <form (ngSubmit)="login()">
               <mat-form-field>
                 <input
                   matInput
                   placeholder="Email"
+                  type="email"
                   required
                   name="email"
                   ngModel
@@ -41,6 +42,7 @@
                 mat-raised-button
                 color="primary"
                 class="login-button"
+                type="submit"
                 >
                 Sign In
               </button>

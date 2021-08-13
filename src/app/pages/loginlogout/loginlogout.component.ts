@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginlogoutComponent implements OnInit {
 
+  email="";
+  password="";
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  login(){
+    alert("hyy "+this.email);
+  }
+
+    
 }
