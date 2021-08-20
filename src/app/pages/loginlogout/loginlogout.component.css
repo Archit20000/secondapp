@@ -1,22 +1,49 @@
-input, select {
-  width: 30%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  }
+.login-page {
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #286fe0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
 
-  button{
-    border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  background-color: navy;
-  }
+.mycard {
+  width: 50%;
+  height: 55%;
+  margin: 10% auto;
+  padding: 10px;
+  
+  border-radius: 30px;
+  background-color: #ffffff;
+  display: flex;
+  
+  
+}
+
+.right{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+form{
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+button{
+  width: 45%;
+  margin-left: 65px;
+  border-radius: 20px;
+}
+
+
+
+

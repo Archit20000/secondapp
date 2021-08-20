@@ -21,6 +21,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginlogoutComponent } from './pages/loginlogout/loginlogout.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
+import { SignupComponent } from './pages/signup/signup.component';
+import { ForgotpasswordComponent } from './pages/forgotpassword/forgotpassword.component';
 
 
 
@@ -31,6 +33,8 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
     AppComponent,
     LoginlogoutComponent,
     HomepageComponent,
+    SignupComponent,
+    ForgotpasswordComponent,
    
   ],
   imports: [

@@ -16,7 +16,9 @@ export class LoginlogoutComponent implements OnInit {
   password1="";
 
   error="";
-
+  show=false;
+  img="https://www.vibrantacademy.com/user/img/login.png";
+  
   constructor(private authservice:AuthService,private router : Router) { }
 
   ngOnInit(): void {
